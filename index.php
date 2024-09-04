@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $API = new RouterosAPI();
 
     // Koneksi ke Mikrotik
-    if ($API->connect('103.13.206.125', 'admin', '04121989', 8728)) {
+    if ($API->connect('', '', '', 8728)) {
 
         // Mendapatkan daftar secret PPP
         $API->write('/ppp/secret/print');
